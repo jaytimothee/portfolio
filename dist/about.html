@@ -10,6 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="/dist/css/main.css">
     <link rel="stylesheet" href="/dist/css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -44,77 +45,81 @@
     </header>
 
     <main id="about">
+        <span class="text-secondary">
+            ABOUT ME
+        </span>
+        <section class="section section-dark">
+            <p>
+                Prolific, Full Stack web developer with a passion for metrics and user experience. Proven ability in optimizing web functionality
+                that improve data retrieval and workflow efficiencies. Passionate about building world class web applications.
+                Highly experience in working with multiple web technologies, such as React js, HTML, JavaScript, CSS, Twitter
+                Bootstrap, MySQL, Node js and Express.
+            </p>
+        </section>
 
-            <section class="section section-dark">
-                    <p>
-                            Prolific, full stack web
-                            developer with a passion for
-                            metrics and user
-                            experience. Proven ability
-                            in optimizing web
-                            functionality that improve
-                            data retrieval and workflow
-                            efficiencies. Passionate
-                            about building world class
-                            web applications. Highly
-                            experience in working with
-                            multiple web technologies,
-                            such as React js, HTML,
-                            JavaScript, CSS, Twitter
-                            Bootstrap, MySQL, Node js
-                            and Express.
-                    </p>
-                </section>
-
-        <div class="pimg1">
-            <div class="ptext">
-                <span class="border text-secondary">
-                    ABOUT ME
-                </span>
-            </div>
-        </div>
-
+        <div class="pimg1"></div>
 
         <section class="section section-dark">
-            <h2>Section One</h2>
             <div class="box">
                 <div class="skills-box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, facere.</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <li class="header">Skills</li>
+                    <li>Responsive Design</li>
+                    <li>Testing/Debugging</li>
+                    <li>Version Controll/Git</li>
+                    <li>Performance Optimization</li>
                 </div>
-                <div class="skills-box">hello dhdj diud udhuc hcuc </div>
-                <div class="skills-box">hhd ududchud uufdhgyfgufuf f i fvuh j v i v v vfufh</div>
+                <div class="skills-box">
+                    <li class="header">Experience</li>
+                    <li>3+ Years React </li>
+                    <li>Backend Development with Node js</li>
+                    <li>Restful API Development</li>
+                    <li>PHP/Laravel</li>
+                </div>
+                <div class="skills-box">
+                    <li class="header">Education</li>
+                    <li>A.S Computer Science Degree </li>
+                    <li>Coding Bootcamp</li>
+                    <li>Udemy</li>
+                    <li>Team Tree House</li>
+                </div>
             </div>
         </section>
 
-        <div class="pimg2">
-
-        </div>
+        <div class="pimg2"></div>
 
         <section class="section section-dark">
-            <h2>Section Two</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet
-                tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium,
-                blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi
-                cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos!
-                Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-            </p>
+            <div class="icon-box" data-aos="fade-right" data-aos-duration="2000">
+                <div class="icon">
+                    <i class="fas fa-bolt" data-aos-duration="3000"></i>
+                    <h3>Performace</h3>
+                    <p>Optimized Tested and Deployed.</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure</h3>
+                    <p>Reliable Structured and Secured.</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-users"></i>
+                    <h3>Growth</h3>
+                    <p>Scalable Quantify and Dynamic.</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Agile</h3>
+                    <p>Scrum Feature Driven</p>
+                </div>
+            </div>
         </section>
 
-        <div class="pimg3">
-
-        </div>
+        <div class="pimg3"></div>
 
         <section class="section section-dark">
-            <h2>Section Three</h2>
+            <div class="tag-line">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet
-                tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium,
-                blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi
-                cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos!
-                Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+                    From single landing pages to fully-blown eCommerce stores, I can help create the design that fits perfectly with you and your business needs.       
             </p>
+            <h3>Lets Work Together.</h3></div>
         </section>
 
         <div class="pimg1">
@@ -123,6 +128,7 @@
                     JOB Timothee
                 </span>
             </div>
+        </div>
 
 
 
@@ -130,6 +136,12 @@
     </main>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
