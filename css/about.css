@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  background-color: #fff;
+}
+
+.menu-btn .btn-line {
+  background: black;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+      fixed = parallax
+      scroll = normal
+    */
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url(../img/vendor/img1.jpeg);
+  min-height: 400px;
+}
+
+.pimg2 {
+  background-image: url(../img/vendor/img2.jpeg);
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url(../img/vendor/img3.jpeg);
+  min-height: 400px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-dark {
+  background-color: transparent;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #eece1a;
+  padding: 20px;
+}
+
+.box {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills-box {
+  background-color: #fff;
+  width: 300px;
+  height: 250px;
+  margin: 30px;
+  border-bottom: 6px solid #eece1a;
+  z-index: 3;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skills-box .header {
+  background-color: #111;
+  color: #eece1a;
+  font-size: 25px;
+  list-style: none;
+  text-align: center;
+}
+
+.skills-box li {
+  border-bottom: 1px solid #eee;
+  padding: 9.5px;
+  text-align: center;
+  list-style: none;
+}
+
+.skills-box:hover {
+  box-shadow: 5px 10px 18px #888;
+}
+
+.icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon i{
+    color:#eece1a;
+    font-size: 3.5rem;
+}
+
+.icon p{
+    font-size: 16px;
+}
+
+.tag-line{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px
+}
+
+
+.tag-line h3{
+    text-align: center;
+    font-size: 5vw;
+}
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: fixed;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .icon-box{
+      flex-direction: column;
+  }
+  .ptext .border{
+      padding: 0px;
+  }
+}
