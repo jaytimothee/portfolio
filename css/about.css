@@ -56,7 +56,8 @@ html {
 
 .section-dark {
   background-color: transparent;
-  color: #ddd;
+  color: rgb(177, 177, 177);
+  font-weight: 800;
 }
 
 .ptext {
